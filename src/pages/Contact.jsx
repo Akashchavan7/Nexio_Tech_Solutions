@@ -22,7 +22,7 @@ function Contact() {
 
   const contactDetails = useMemo(
     () => [
-      { label: "Email", value: "hello@nexiotechsolutions.com", icon: Mail },
+      { label: "Email", value: "hello@satronix.com", icon: Mail },
       { label: "Phone", value: "+91 9356965877", icon: Phone },
       { label: "Location", value: "Baner, Pune", icon: MapPin },
     ],
@@ -76,16 +76,16 @@ function Contact() {
         <SectionWrapper className="pb-10 pt-16 sm:pt-20">
           <Seo
             title="Contact"
-            description="Contact Nexio Tech Solutions to start a new web or app project and discuss your product goals."
+            description="Contact SAtronix to start a new web or app project and discuss your product goals."
           />
           <FadeInSection className="max-w-4xl">
             <p className="text-sm uppercase tracking-[0.28em] text-cyan-200/70">Contact</p>
             <AnimatedText
-              text="Let�s turn your next product idea into a premium digital experience."
+              text="Let's turn your next product idea into a premium digital experience."
               className="mt-6 font-display text-4xl font-bold leading-tight sm:text-6xl"
             />
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/65">
-              Share your goals, timeline, and rough scope. We�ll review it and come
+              Share your goals, timeline, and rough scope. We'll review it and come
               back with a thoughtful next step.
             </p>
           </FadeInSection>
@@ -187,7 +187,7 @@ function Contact() {
                   </Button>
                   <p className="text-sm text-white/45">
                     {status === "sent"
-                      ? "Mock email sent successfully. We�ll be in touch soon."
+                      ? "Mock email sent successfully. We'll be in touch soon."
                       : "This form uses client-side validation with a mock submission flow."}
                   </p>
                 </div>
@@ -201,3 +201,4 @@ function Contact() {
 }
 
 export default Contact;
+

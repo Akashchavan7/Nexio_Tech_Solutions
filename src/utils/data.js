@@ -70,13 +70,13 @@ export const featuredProjects = [
 export const testimonials = [
   {
     quote:
-      "Nexio Tech Solutions created exactly the kind of modern website we wanted for our food business. The design feels premium and our customers find it very easy to use.",
+      "SAtronix created exactly the kind of modern website we wanted for our food business. The design feels premium and our customers find it very easy to use.",
     author: "Rahul Patil",
     role: "Owner, Cooknjoy",
   },
   {
     quote:
-      "Our visitor management system became much faster and more organized after working with Nexio. The team understood our requirements clearly and delivered a smooth solution.",
+      "Our visitor management system became much faster and more organized after working with SAtronix. The team understood our requirements clearly and delivered a smooth solution.",
     author: "Priya Sharma",
     role: "Admin Manager, Pune Corporate Hub",
   },
@@ -112,7 +112,7 @@ export const timeline = [
   {
     year: "2024",
     title: "Studio Foundation",
-    text: "Nexio Tech Solutions launched with a focus on premium digital products for fast-moving startups.",
+    text: "SAtronix launched with a focus on premium digital products for fast-moving startups.",
   },
   {
     year: "2025",
@@ -122,10 +122,11 @@ export const timeline = [
   {
     year: "2026",
     title: "Experience-Led Delivery",
-    text: "Nexio refined its signature approach: cinematic interfaces, conversion-aware UX, and resilient frontend systems.",
+    text: "SAtronix refined its signature approach: cinematic interfaces, conversion-aware UX, and resilient frontend systems.",
   },
 ];
 
 export const socialLinks = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/akashchavan0719", icon: ArrowUpRight },
 ];
+

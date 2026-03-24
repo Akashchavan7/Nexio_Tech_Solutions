@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import Button from "../common/Button";
 import { navLinks } from "../../utils/data";
 import { cn } from "../../utils/cn";
-import logo from "../../assets/nexio_logo.png";
+import logo from "../../assets/SAtronix_logo.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ function Navbar() {
         <NavLink to="/" className="flex items-center">
           <img
             src={logo}
-            alt="Nexio Tech Solutions logo"
+            alt="SAtronix logo"
             className="h-9 w-auto object-contain drop-shadow-[0_0_18px_rgba(56,189,248,0.35)] sm:h-10"
           />
         </NavLink>
@@ -65,7 +65,7 @@ function Navbar() {
             <div className="mb-4">
               <img
                 src={logo}
-                alt="Nexio Tech Solutions logo"
+                alt="SAtronix logo"
                 className="h-10 w-auto object-contain drop-shadow-[0_0_18px_rgba(56,189,248,0.35)]"
               />
             </div>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { socialLinks } from "../../utils/data";
-import logo from "../../assets/nexio_logo.png";
+import logo from "../../assets/SAtronix_logo.png";
 
 function Footer() {
   return (
@@ -9,7 +9,7 @@ function Footer() {
         <div>
           <img
             src={logo}
-            alt="Nexio Tech Solutions logo"
+            alt="SAtronix logo"
             className="h-12 w-auto object-contain drop-shadow-[0_0_22px_rgba(56,189,248,0.35)] sm:h-14"
           />
           <p className="mt-4 max-w-xl text-sm leading-7 text-white/60">

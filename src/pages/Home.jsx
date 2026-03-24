@@ -37,7 +37,7 @@ function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
               >
-                Nexio Tech Solutions designs and builds futuristic websites, apps,
+                SAtronix designs and builds futuristic websites, apps,
                 and product ecosystems that look cinematic, feel effortless, and
                 perform at scale.
               </motion.p>
@@ -86,7 +86,7 @@ function Home() {
     >
       <Seo
         title="Home"
-        description="Nexio Tech Solutions builds high-end digital products, web experiences, and scalable apps with futuristic design and smooth motion."
+        description="SAtronix builds high-end digital products, web experiences, and scalable apps with futuristic design and smooth motion."
       />
 
       <SectionWrapper>
@@ -205,7 +205,7 @@ function Home() {
                   Get Started
                 </Button>
                 <Button as="link" to="/about" variant="outline">
-                  Why Nexio
+                  Why SAtronix
                 </Button>
               </div>
             </div>
@@ -217,3 +217,4 @@ function Home() {
 }
 
 export default Home;
+

@@ -1,4 +1,4 @@
-# Nexio Tech Solutions
+# SAtronix
 
 Premium digital agency website built with React, Vite, Tailwind CSS, Framer Motion, and React Three Fiber.
 

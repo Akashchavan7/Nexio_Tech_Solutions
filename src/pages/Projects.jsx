@@ -17,7 +17,7 @@ function Projects() {
         <SectionWrapper className="pb-10 pt-16 sm:pt-20">
           <Seo
             title="Projects"
-            description="Browse selected Nexio Tech Solutions projects across food platforms, visitor management, and mobile app development."
+            description="Browse selected SAtronix projects across food platforms, visitor management, and mobile app development."
           />
           <FadeInSection className="max-w-4xl">
             <p className="text-sm uppercase tracking-[0.28em] text-cyan-200/70">Projects</p>
@@ -91,3 +91,4 @@ function Projects() {
 }
 
 export default Projects;
+
