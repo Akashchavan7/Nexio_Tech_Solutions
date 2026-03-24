@@ -14,16 +14,16 @@ function About() {
         <SectionWrapper className="pb-10 pt-16 sm:pt-20">
           <Seo
             title="About"
-            description="Learn how SAtronix blends strategy, product design, and engineering to build modern digital experiences."
+            description="Learn how SAtronix Technology blends strategy, product design, and engineering to build modern digital experiences."
           />
           <FadeInSection className="max-w-4xl">
-            <p className="text-sm uppercase tracking-[0.28em] text-cyan-200/70">About SAtronix</p>
+            <p className="text-sm uppercase tracking-[0.28em] text-cyan-200/70">About SAtronix Technology</p>
             <AnimatedText
               text="We blend design precision, motion storytelling, and scalable engineering."
               className="mt-6 font-display text-4xl font-bold leading-tight sm:text-6xl"
             />
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/65">
-              SAtronix is a digital agency focused on premium web and app
+              SAtronix Technology is a digital agency focused on premium web and app
               experiences. We help ambitious teams turn ideas into products that look
               sharp, move beautifully, and perform reliably in production.
             </p>
@@ -133,4 +133,5 @@ function About() {
 }
 
 export default About;
+
 

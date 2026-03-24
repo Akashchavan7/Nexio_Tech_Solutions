@@ -3,8 +3,8 @@ import { useEffect } from "react";
 function Seo({ title, description }) {
   useEffect(() => {
     const pageTitle = title
-      ? `${title} | SAtronix`
-      : "SAtronix | Building Next-Gen Digital Solutions";
+      ? `${title} | SAtronix Technology`
+      : "SAtronix Technology | Building Next-Gen Digital Solutions";
 
     document.title = pageTitle;
 
@@ -45,3 +45,4 @@ function Seo({ title, description }) {
 }
 
 export default Seo;
+

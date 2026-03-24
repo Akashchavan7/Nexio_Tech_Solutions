@@ -9,7 +9,7 @@ function Footer() {
         <div>
           <img
             src={logo}
-            alt="SAtronix logo"
+            alt="SAtronix Technology logo"
             className="h-12 w-auto object-contain drop-shadow-[0_0_22px_rgba(56,189,248,0.35)] sm:h-14"
           />
           <p className="mt-4 max-w-xl text-sm leading-7 text-white/60">
@@ -44,3 +44,4 @@ function Footer() {
 }
 
 export default Footer;
+

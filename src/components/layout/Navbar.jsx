@@ -16,7 +16,7 @@ function Navbar() {
         <NavLink to="/" className="flex items-center">
           <img
             src={logo}
-            alt="SAtronix logo"
+            alt="SAtronix Technology logo"
             className="h-9 w-auto object-contain drop-shadow-[0_0_18px_rgba(56,189,248,0.35)] sm:h-10"
           />
         </NavLink>
@@ -65,7 +65,7 @@ function Navbar() {
             <div className="mb-4">
               <img
                 src={logo}
-                alt="SAtronix logo"
+                alt="SAtronix Technology logo"
                 className="h-10 w-auto object-contain drop-shadow-[0_0_18px_rgba(56,189,248,0.35)]"
               />
             </div>
@@ -92,3 +92,4 @@ function Navbar() {
 }
 
 export default Navbar;
+

@@ -14,7 +14,7 @@ function Services() {
         <SectionWrapper className="pb-10 pt-16 sm:pt-20">
           <Seo
             title="Services"
-            description="Explore SAtronix web development and app development services for modern brands and startups."
+            description="Explore SAtronix Technology web development and app development services for modern brands and startups."
           />
           <FadeInSection className="max-w-4xl">
             <p className="text-sm uppercase tracking-[0.28em] text-cyan-200/70">Services</p>
@@ -84,4 +84,5 @@ function Services() {
 }
 
 export default Services;
+
 

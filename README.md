@@ -1,4 +1,4 @@
-# SAtronix
+# SAtronix Technology
 
 Premium digital agency website built with React, Vite, Tailwind CSS, Framer Motion, and React Three Fiber.
 
@@ -24,3 +24,4 @@ npm run dev
 ```bash
 npm run build
 ```
+

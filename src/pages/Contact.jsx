@@ -22,7 +22,7 @@ function Contact() {
 
   const contactDetails = useMemo(
     () => [
-      { label: "Email", value: "hello@satronix.com", icon: Mail },
+      { label: "Email", value: "hello@satronixtechnology.com", icon: Mail },
       { label: "Phone", value: "+91 9356965877", icon: Phone },
       { label: "Location", value: "Baner, Pune", icon: MapPin },
     ],
@@ -76,7 +76,7 @@ function Contact() {
         <SectionWrapper className="pb-10 pt-16 sm:pt-20">
           <Seo
             title="Contact"
-            description="Contact SAtronix to start a new web or app project and discuss your product goals."
+            description="Contact SAtronix Technology to start a new web or app project and discuss your product goals."
           />
           <FadeInSection className="max-w-4xl">
             <p className="text-sm uppercase tracking-[0.28em] text-cyan-200/70">Contact</p>
@@ -201,4 +201,6 @@ function Contact() {
 }
 
 export default Contact;
+
+
 
