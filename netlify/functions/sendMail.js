@@ -112,6 +112,32 @@ ${message}`,
       `,
     });
 
+    await transporter.sendMail({
+      from: `"Satronix Technology" <${EMAIL_USER}>`,
+      to: email,
+      replyTo: EMAIL_USER,
+      subject: "Thank you for choosing Satronix Technology",
+      text: `Dear ${name},
+
+Thank you for choosing Satronix Technology.
+
+We have received your request successfully. Our team will review your details and get in touch with you shortly.
+
+If you have any urgent queries, feel free to reply to this email.
+
+Best regards,
+Satronix Technology Team`,
+      html: `
+        <div style="font-family: Arial, sans-serif; line-height: 1.7; color: #111827;">
+          <p>Dear ${name},</p>
+          <p>Thank you for choosing Satronix Technology.</p>
+          <p>We have received your request successfully. Our team will review your details and get in touch with you shortly.</p>
+          <p>If you have any urgent queries, feel free to reply to this email.</p>
+          <p>Best regards,<br />Satronix Technology Team</p>
+        </div>
+      `,
+    });
+
     return jsonResponse(200, { success: "Message sent successfully." });
   } catch (error) {
     console.error("sendMail error", error);
