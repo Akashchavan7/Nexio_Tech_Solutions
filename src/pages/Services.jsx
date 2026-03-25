@@ -14,7 +14,7 @@ function Services() {
         <SectionWrapper className="pb-10 pt-16 sm:pt-20">
           <Seo
             title="Services"
-            description="Explore SAtronix Technology web development and app development services for modern brands and startups."
+            description="Explore SAtronix Technology services across web development, app development, video editing, AI reels, and creative content."
           />
           <FadeInSection className="max-w-4xl">
             <p className="text-sm uppercase tracking-[0.28em] text-cyan-200/70">Services</p>
@@ -70,7 +70,7 @@ function Services() {
             <div>
               <p className="text-sm uppercase tracking-[0.28em] text-cyan-200/70">Ready to Build</p>
               <h3 className="mt-3 font-display text-3xl font-semibold">
-                Need a site or app that feels premium from the first interaction?
+                Need a website, app, or content system that feels premium from the first interaction?
               </h3>
             </div>
             <Button as="link" to="/contact" variant="gradient">

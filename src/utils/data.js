@@ -1,11 +1,14 @@
 import {
   AppWindow,
   ArrowUpRight,
-  Atom,
   BriefcaseBusiness,
   ChartNoAxesCombined,
+  Clapperboard,
+  Megaphone,
+  Palette,
   Smartphone,
   Sparkles,
+  WandSparkles,
   Workflow,
 } from "lucide-react";
 
@@ -31,6 +34,34 @@ export const services = [
       "Cross-platform mobile products engineered for scale, speed, and clean user journeys across Android and iOS.",
     bullets: ["Android/iOS apps", "Cross-platform (React Native)", "Scalable backend"],
     icon: Smartphone,
+  },
+  {
+    title: "Video Editing",
+    description:
+      "Sharp, polished video edits designed for brands that want clean storytelling, smooth pacing, and premium visual impact across platforms.",
+    bullets: ["Promotional videos", "YouTube edits", "Short-form brand content"],
+    icon: Clapperboard,
+  },
+  {
+    title: "AI Reel Making",
+    description:
+      "High-attention reels created with AI-assisted workflows for faster production, strong hooks, and social-ready content that still feels on-brand.",
+    bullets: ["Instagram reels", "AI voiceovers and captions", "Trend-ready short videos"],
+    icon: WandSparkles,
+  },
+  {
+    title: "Social Media Creatives",
+    description:
+      "Conversion-focused creative assets for campaigns, launches, and daily posting that keep your visual identity consistent and memorable.",
+    bullets: ["Post designs", "Story creatives", "Campaign assets"],
+    icon: Megaphone,
+  },
+  {
+    title: "Graphic & Logo Design",
+    description:
+      "Brand-focused design support for businesses that need strong visual identity systems and clean promotional assets that feel professional and memorable.",
+    bullets: ["Graphic design", "Logo design", "Brand identity assets"],
+    icon: Palette,
   },
 ];
 
@@ -67,6 +98,48 @@ export const featuredProjects = [
   },
 ];
 
+
+export const leadership = [
+  {
+    name: "Akash Chavan",
+    role: "Founder",
+    description:
+      "Leads product direction, development strategy, and the execution standards behind SAtronix Technology's digital work.",
+  },
+  {
+    name: "Sakshi Pawar",
+    role: "Co-Founder",
+    description:
+      "Shapes creative direction, brand communication, and client collaboration to keep every delivery aligned and memorable.",
+  },
+];
+
+export const teamMembers = [
+  {
+    name: "Akash Chavan",
+    role: "Development & Business Growth",
+    description:
+      "Supports product development, execution planning, and business growth initiatives across the studio.",
+  },
+  {
+    name: "Dhananjay Ghorapade",
+    role: "Business Client Relations",
+    description:
+      "Handles client coordination, business communication, and relationship-building to keep projects moving smoothly.",
+  },
+  {
+    name: "Sakshi Pawar",
+    role: "Social Media Leadership",
+    description:
+      "Leads social media direction, creative planning, and brand presence across digital campaigns.",
+  },
+  {
+    name: "Gayatri Yelam",
+    role: "Video Editing & Social Media Marketing",
+    description:
+      "Creates edited video content and supports social media marketing with platform-ready creative assets.",
+  },
+];
 export const testimonials = [
   {
     quote:
