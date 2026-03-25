@@ -109,9 +109,9 @@ ${message}`,
       `,
     });
 
-    return jsonResponse(200, { success: "Email sent successfully." });
+    return jsonResponse(200, { success: "Message sent successfully." });
   } catch (error) {
     console.error("sendMail error", error);
-    return jsonResponse(500, { error: "Failed to send email." });
+    return jsonResponse(500, { error: "Failed to send message." });
   }
 }
