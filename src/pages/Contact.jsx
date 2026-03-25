@@ -19,6 +19,7 @@ function Contact() {
   const [formData, setFormData] = useState(initialValues);
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState("idle");
+  const [statusMessage, setStatusMessage] = useState("");
 
   const contactDetails = useMemo(
     () => [
@@ -65,9 +66,31 @@ function Contact() {
     if (!validate()) return;
 
     setStatus("sending");
-    await new Promise((resolve) => window.setTimeout(resolve, 1400));
-    setStatus("sent");
-    setFormData(initialValues);
+    setStatusMessage("");
+
+    try {
+      const response = await fetch("/.netlify/functions/sendMail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Something went wrong while sending your message.");
+      }
+
+      setStatus("sent");
+      setStatusMessage(result.success || "Your message has been sent successfully.");
+      setFormData(initialValues);
+      setErrors({});
+    } catch (error) {
+      setStatus("error");
+      setStatusMessage(error.message || "Failed to send your message.");
+    }
   };
 
   return (
@@ -185,10 +208,18 @@ function Contact() {
                   <Button type="submit" variant="gradient" disabled={status === "sending"}>
                     {status === "sending" ? "Sending..." : "Send Message"}
                   </Button>
-                  <p className="text-sm text-white/45">
-                    {status === "sent"
-                      ? "Mock email sent successfully. We'll be in touch soon."
-                      : "This form uses client-side validation with a mock submission flow."}
+                  <p
+                    className={`text-sm ${
+                      status === "error"
+                        ? "text-rose-300"
+                        : status === "sent"
+                          ? "text-emerald-300"
+                          : "text-white/45"
+                    }`}
+                  >
+                    {status === "idle" || status === "sending"
+                      ? "Your message will be sent securely through our Netlify serverless function."
+                      : statusMessage}
                   </p>
                 </div>
               </form>
@@ -201,6 +232,3 @@ function Contact() {
 }
 
 export default Contact;
-
-
-
