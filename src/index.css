@@ -38,14 +38,15 @@ a {
 
 .glass-panel {
   background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.14),
-    rgba(255, 255, 255, 0.06)
+    145deg,
+    rgba(15, 23, 42, 0.86),
+    rgba(30, 41, 59, 0.72)
   );
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.4);
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.5);
 }
 
 .text-gradient {
@@ -54,4 +55,5 @@ a {
   background-clip: text;
   color: transparent;
 }
+
 

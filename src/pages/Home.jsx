@@ -92,8 +92,8 @@ function Home() {
       <SectionWrapper>
         <FadeInSection className="mb-10 flex items-end justify-between gap-6">
           <div>
-            <p className="text-sm uppercase tracking-[0.28em] text-cyan-200/70">Services</p>
-            <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
+            <p className="text-sm uppercase tracking-[0.28em] text-white">Services</p>
+            <h2 className="mt-3 font-display text-3xl font-semibold text-white sm:text-4xl">
               Crafted for speed, clarity, and standout presence
             </h2>
           </div>
@@ -114,12 +114,12 @@ function Home() {
                     <ArrowRight className="text-white/30" size={18} />
                   </div>
                   <h3 className="mt-6 font-display text-xl font-semibold sm:mt-8 sm:text-2xl">{service.title}</h3>
-                  <p className="mt-4 text-white/65">{service.description}</p>
+                  <p className="mt-4 text-white">{service.description}</p>
                   <div className="mt-6 flex flex-wrap gap-2">
                     {service.bullets.map((bullet) => (
                       <span
                         key={bullet}
-                        className="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs text-white/65"
+                        className="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs text-white"
                       >
                         {bullet}
                       </span>
@@ -169,8 +169,8 @@ function Home() {
 
       <SectionWrapper className="pt-4">
         <FadeInSection className="mb-10">
-          <p className="text-sm uppercase tracking-[0.28em] text-cyan-200/70">Testimonials</p>
-          <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
+          <p className="text-sm uppercase tracking-[0.28em] text-white">Testimonials</p>
+          <h2 className="mt-3 font-display text-3xl font-semibold text-white sm:text-4xl">
             Happy clients who trusted us to build real digital products
           </h2>
         </FadeInSection>
@@ -179,10 +179,10 @@ function Home() {
             <FadeInSection key={item.author} delay={index * 0.06}>
               <Card className="h-full">
                 <Quote className="text-cyan-200/75" />
-                <p className="mt-4 text-base leading-7 text-white/76 sm:mt-5 sm:text-lg sm:leading-8">"{item.quote}"</p>
+                <p className="mt-4 text-base leading-7 text-white sm:mt-5 sm:text-lg sm:leading-8">"{item.quote}"</p>
                 <div className="mt-8">
                   <p className="font-medium text-white">{item.author}</p>
-                  <p className="text-sm text-white/45">{item.role}</p>
+                  <p className="text-sm text-white/70">{item.role}</p>
                 </div>
               </Card>
             </FadeInSection>
@@ -217,6 +217,7 @@ function Home() {
 }
 
 export default Home;
+
 
 
 
