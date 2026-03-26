@@ -5,7 +5,7 @@ import { cn } from "../../utils/cn";
 const variants = {
   primary: "bg-white text-slate-950 hover:bg-slate-100",
   outline:
-    "border border-white/15 bg-white/5 text-white hover:border-cyan-300/50 hover:bg-white/10",
+    "border border-white/20 bg-white/10 text-white hover:border-cyan-300/50 hover:bg-white/14",
   gradient:
     "bg-gradient-to-r from-sky-400 via-cyan-300 to-violet-500 text-slate-950 shadow-glow hover:brightness-110",
 };
@@ -51,3 +51,4 @@ function Button({ children, className, variant = "primary", as = "button", to, h
 }
 
 export default Button;
+

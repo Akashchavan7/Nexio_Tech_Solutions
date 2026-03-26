@@ -5,7 +5,7 @@
 :root {
   color-scheme: dark;
   font-family: "Space Grotesk", sans-serif;
-  background: #0a0a0a;
+  background: #1a2330;
 }
 
 html {
@@ -16,9 +16,9 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    radial-gradient(circle at top, rgba(56, 189, 248, 0.12), transparent 25%),
-    radial-gradient(circle at right top, rgba(139, 92, 246, 0.14), transparent 22%),
-    #0a0a0a;
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.18), transparent 28%),
+    radial-gradient(circle at right top, rgba(139, 92, 246, 0.14), transparent 24%),
+    linear-gradient(180deg, #141925 0%, #10131a 55%, #0d1117 100%);
   color: white;
 }
 
@@ -39,13 +39,13 @@ a {
 .glass-panel {
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.03)
+    rgba(255, 255, 255, 0.14),
+    rgba(255, 255, 255, 0.06)
   );
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 24px 80px rgba(2, 6, 23, 0.55);
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.4);
 }
 
 .text-gradient {
@@ -54,3 +54,4 @@ a {
   background-clip: text;
   color: transparent;
 }
+

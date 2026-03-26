@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        base: "#0a0a0a",
-        surface: "#101118",
-        card: "#131520",
-        border: "rgba(255,255,255,0.08)",
+        base: "#1a2330",
+        surface: "#243041",
+        card: "#2b3649",
+        border: "rgba(255,255,255,0.16)",
         neon: {
           blue: "#38bdf8",
           purple: "#8b5cf6",
@@ -20,13 +20,13 @@ export default {
       },
       boxShadow: {
         glow: "0 0 30px rgba(56, 189, 248, 0.18)",
-        panel: "0 24px 80px rgba(2, 6, 23, 0.55)",
+        panel: "0 24px 80px rgba(15, 23, 42, 0.4)",
       },
       backgroundImage: {
         "hero-grid":
-          "linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)",
+          "linear-gradient(rgba(255,255,255,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.07) 1px, transparent 1px)",
         "neon-radial":
-          "radial-gradient(circle at top, rgba(56, 189, 248, 0.24), transparent 34%), radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.2), transparent 28%)",
+          "radial-gradient(circle at top, rgba(56, 189, 248, 0.3), transparent 40%), radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.2), transparent 32%)",
       },
       animation: {
         float: "float 9s ease-in-out infinite",
@@ -51,3 +51,5 @@ export default {
   },
   plugins: [],
 };
+
+

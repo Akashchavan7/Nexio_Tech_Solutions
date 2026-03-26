@@ -37,8 +37,8 @@ function App() {
       <AnimatePresence>{isLoading && <Loader />}</AnimatePresence>
       {!isLoading && (
         <div className="relative min-h-screen overflow-hidden bg-base text-white">
-          <div className="pointer-events-none fixed inset-0 bg-neon-radial opacity-80" />
-          <div className="pointer-events-none fixed inset-0 bg-hero-grid bg-[size:120px_120px] opacity-[0.05]" />
+          <div className="pointer-events-none fixed inset-0 bg-neon-radial opacity-62" />
+          <div className="pointer-events-none fixed inset-0 bg-hero-grid bg-[size:120px_120px] opacity-[0.07]" />
           <Navbar />
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
@@ -55,3 +55,5 @@ function App() {
 }
 
 export default App;
+
+

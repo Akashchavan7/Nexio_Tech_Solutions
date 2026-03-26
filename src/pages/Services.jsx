@@ -38,20 +38,20 @@ function Services() {
               <FadeInSection key={service.title} delay={index * 0.08}>
                 <Card className="h-full">
                   <div className="flex items-center justify-between">
-                    <span className="rounded-3xl border border-white/10 bg-white/8 p-4 text-cyan-200">
-                      <Icon size={28} />
+                    <span className="rounded-2xl border border-white/10 bg-white/8 p-3 text-cyan-200 sm:rounded-3xl sm:p-4">
+                      <Icon size={22} className="sm:h-7 sm:w-7" />
                     </span>
                     <span className="rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-[0.26em] text-white/45">
                       0{index + 1}
                     </span>
                   </div>
-                  <h2 className="mt-8 font-display text-3xl font-semibold">{service.title}</h2>
+                  <h2 className="mt-6 font-display text-2xl font-semibold sm:mt-8 sm:text-3xl">{service.title}</h2>
                   <p className="mt-4 max-w-xl text-white/65">{service.description}</p>
-                  <div className="mt-8 space-y-3">
+                  <div className="mt-6 space-y-2.5 sm:mt-8 sm:space-y-3">
                     {service.bullets.map((bullet) => (
                       <div
                         key={bullet}
-                        className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white/75"
+                        className="rounded-2xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white/75 sm:py-3 sm:text-base"
                       >
                         {bullet}
                       </div>
@@ -66,7 +66,7 @@ function Services() {
 
       <SectionWrapper className="pt-6">
         <FadeInSection>
-          <div className="glass-panel flex flex-col gap-6 rounded-[32px] p-8 lg:flex-row lg:items-center lg:justify-between">
+          <div className="glass-panel flex flex-col gap-5 rounded-[24px] p-5 sm:rounded-[32px] sm:p-8 lg:flex-row lg:items-center lg:justify-between">
             <div>
               <p className="text-sm uppercase tracking-[0.28em] text-cyan-200/70">Ready to Build</p>
               <h3 className="mt-3 font-display text-3xl font-semibold">
@@ -84,5 +84,6 @@ function Services() {
 }
 
 export default Services;
+
 
 

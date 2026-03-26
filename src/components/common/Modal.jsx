@@ -6,7 +6,7 @@ function Modal({ isOpen, onClose, title, children }) {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 z-[90] flex items-center justify-center bg-slate-950/70 px-4 backdrop-blur-md"
+          className="fixed inset-0 z-[90] flex items-center justify-center bg-slate-950/58 px-4 backdrop-blur-md"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -22,7 +22,7 @@ function Modal({ isOpen, onClose, title, children }) {
           >
             <button
               type="button"
-              className="absolute right-4 top-4 rounded-full border border-white/10 bg-white/5 p-2 text-white/70 transition hover:bg-white/10 hover:text-white"
+              className="absolute right-4 top-4 rounded-full border border-white/14 bg-white/10 p-2 text-white/75 transition hover:bg-white/14 hover:text-white"
               onClick={onClose}
               aria-label="Close modal"
             >
@@ -38,3 +38,4 @@ function Modal({ isOpen, onClose, title, children }) {
 }
 
 export default Modal;
+

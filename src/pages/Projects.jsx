@@ -39,19 +39,19 @@ function Projects() {
             <FadeInSection key={project.title} delay={index * 0.06}>
               <Card className="h-full cursor-pointer" onClick={() => setSelectedProject(project)}>
                 <div
-                  className={`h-56 rounded-[26px] border border-white/10 bg-gradient-to-br ${project.accent} p-5`}
+                  className={`h-44 rounded-[20px] border border-white/10 bg-gradient-to-br p-4 sm:h-56 sm:rounded-[26px] sm:p-5 ${project.accent}`}
                 >
-                  <div className="flex h-full items-end justify-between rounded-[22px] border border-white/10 bg-black/25 p-5">
+                  <div className="flex h-full items-end justify-between rounded-[18px] border border-white/10 bg-black/25 p-4 sm:rounded-[22px] sm:p-5">
                     <div>
                       <p className="text-xs uppercase tracking-[0.24em] text-white/55">{project.category}</p>
-                      <h3 className="mt-3 font-display text-2xl font-semibold">{project.title}</h3>
+                      <h3 className="mt-2.5 font-display text-xl font-semibold sm:mt-3 sm:text-2xl">{project.title}</h3>
                     </div>
                     <span className="rounded-full border border-white/10 bg-white/8 px-3 py-2 text-xs text-white/70">
                       Preview
                     </span>
                   </div>
                 </div>
-                <p className="mt-6 text-white/65">{project.description}</p>
+                <p className="mt-4 text-sm text-white/65 sm:mt-6 sm:text-base">{project.description}</p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {project.tech.map((item) => (
                     <span key={item} className="rounded-full bg-white/6 px-3 py-2 text-xs text-white/65">
@@ -91,5 +91,6 @@ function Projects() {
 }
 
 export default Projects;
+
 
 

@@ -57,7 +57,7 @@ function Home() {
             </div>
 
             <div className="relative">
-              <div className="glass-panel relative ml-auto max-w-xl rounded-[32px] p-6">
+              <div className="glass-panel relative ml-auto max-w-xl rounded-[24px] p-4 sm:rounded-[32px] sm:p-6">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 via-transparent to-violet-500/10" />
                 <div className="relative grid gap-4">
                   {stats.map((item) => {
@@ -65,14 +65,14 @@ function Home() {
                     return (
                       <div
                         key={item.label}
-                        className="flex items-center justify-between rounded-3xl border border-white/10 bg-white/5 px-5 py-4"
+                        className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3 sm:rounded-3xl sm:px-5 sm:py-4"
                       >
                         <div>
-                          <p className="font-display text-3xl font-bold text-white">{item.value}</p>
+                          <p className="font-display text-2xl font-bold text-white sm:text-3xl">{item.value}</p>
                           <p className="mt-1 text-sm text-white/55">{item.label}</p>
                         </div>
-                        <span className="rounded-2xl bg-white/8 p-3 text-cyan-200">
-                          <Icon size={22} />
+                        <span className="rounded-2xl bg-white/8 p-2.5 text-cyan-200 sm:p-3">
+                          <Icon size={20} className="sm:h-[22px] sm:w-[22px]" />
                         </span>
                       </div>
                     );
@@ -108,12 +108,12 @@ function Home() {
               <FadeInSection key={service.title} delay={index * 0.08}>
                 <Card className="h-full">
                   <div className="flex items-center justify-between">
-                    <span className="rounded-2xl bg-white/8 p-3 text-cyan-200">
+                    <span className="rounded-2xl bg-white/8 p-2.5 text-cyan-200 sm:p-3">
                       <Icon size={24} />
                     </span>
                     <ArrowRight className="text-white/30" size={18} />
                   </div>
-                  <h3 className="mt-8 font-display text-2xl font-semibold">{service.title}</h3>
+                  <h3 className="mt-6 font-display text-xl font-semibold sm:mt-8 sm:text-2xl">{service.title}</h3>
                   <p className="mt-4 text-white/65">{service.description}</p>
                   <div className="mt-6 flex flex-wrap gap-2">
                     {service.bullets.map((bullet) => (
@@ -144,9 +144,9 @@ function Home() {
             <FadeInSection key={project.title} delay={index * 0.08}>
               <Card className="h-full">
                 <div
-                  className={`mb-6 h-52 rounded-[24px] border border-white/10 bg-gradient-to-br ${project.accent}`}
+                  className={`mb-4 h-44 rounded-[20px] border border-white/10 bg-gradient-to-br sm:mb-6 sm:h-52 sm:rounded-[24px] ${project.accent}`}
                 >
-                  <div className="flex h-full items-end rounded-[24px] bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.08),_transparent_60%)] p-5">
+                  <div className="flex h-full items-end rounded-[20px] bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.08),_transparent_60%)] p-4 sm:rounded-[24px] sm:p-5">
                     <div className="rounded-2xl border border-white/10 bg-black/30 px-3 py-2 text-xs uppercase tracking-[0.24em] text-white/65">
                       {project.category}
                     </div>
@@ -179,7 +179,7 @@ function Home() {
             <FadeInSection key={item.author} delay={index * 0.06}>
               <Card className="h-full">
                 <Quote className="text-cyan-200/75" />
-                <p className="mt-5 text-lg leading-8 text-white/76">"{item.quote}"</p>
+                <p className="mt-4 text-base leading-7 text-white/76 sm:mt-5 sm:text-lg sm:leading-8">"{item.quote}"</p>
                 <div className="mt-8">
                   <p className="font-medium text-white">{item.author}</p>
                   <p className="text-sm text-white/45">{item.role}</p>
@@ -192,7 +192,7 @@ function Home() {
 
       <SectionWrapper>
         <FadeInSection>
-          <div className="glass-panel overflow-hidden rounded-[36px] p-8 sm:p-12">
+          <div className="glass-panel overflow-hidden rounded-[24px] p-5 sm:rounded-[36px] sm:p-12">
             <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
               <div>
                 <p className="text-sm uppercase tracking-[0.3em] text-cyan-200/70">Let&apos;s Build</p>
@@ -217,5 +217,6 @@ function Home() {
 }
 
 export default Home;
+
 
 

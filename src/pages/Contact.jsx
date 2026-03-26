@@ -130,9 +130,9 @@ function Contact() {
                 const Icon = item.icon;
                 return (
                   <Card key={item.label}>
-                    <div className="flex items-start gap-4">
-                      <span className="rounded-2xl bg-white/8 p-3 text-cyan-200">
-                        <Icon size={20} />
+                    <div className="flex items-start gap-3 sm:gap-4">
+                      <span className="rounded-2xl bg-white/8 p-2.5 text-cyan-200 sm:p-3">
+                        <Icon size={18} className="sm:h-5 sm:w-5" />
                       </span>
                       <div>
                         <p className="text-sm uppercase tracking-[0.24em] text-white/45">{item.label}</p>
@@ -144,14 +144,14 @@ function Contact() {
               })}
               <Card>
                 <p className="text-sm uppercase tracking-[0.24em] text-white/45">Social Links</p>
-                <div className="mt-5 flex flex-wrap gap-3">
+                <div className="mt-4 flex flex-wrap gap-2.5 sm:mt-5 sm:gap-3">
                   {socialLinks.map((item) => (
                     <a
                       key={item.label}
                       href={item.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-white/75 transition hover:bg-white/10"
+                      className="rounded-full border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white/75 transition hover:bg-white/10 sm:py-3"
                     >
                       {item.label}
                     </a>
@@ -241,7 +241,7 @@ function Contact() {
                     }`}
                   >
                     {status === "idle" || status === "sending"
-                      ? "Your message will be sent securely through our Netlify serverless function."
+                      ? "Send us a message and our team will get back to you shortly."
                       : statusMessage}
                   </p>
                 </div>
@@ -255,3 +255,4 @@ function Contact() {
 }
 
 export default Contact;
+

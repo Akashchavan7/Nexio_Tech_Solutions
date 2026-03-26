@@ -8,17 +8,17 @@ function Loader() {
       initial={{ opacity: 1 }}
       exit={{ opacity: 0, transition: { duration: 0.55 } }}
     >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.16),_transparent_28%),radial-gradient(circle_at_80%_20%,_rgba(139,92,246,0.14),_transparent_24%),#0a0a0a]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.24),_transparent_32%),radial-gradient(circle_at_80%_20%,_rgba(139,92,246,0.16),_transparent_26%),linear-gradient(180deg,_#243244_0%,_#1a2330_52%,_#141b26_100%)]" />
 
       <div className="relative flex flex-col items-center">
         <motion.div
-          className="absolute h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl"
+          className="absolute h-72 w-72 rounded-full bg-cyan-400/15 blur-3xl"
           animate={{ scale: [0.95, 1.08, 0.95], opacity: [0.45, 0.8, 0.45] }}
           transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
         />
 
         <motion.div
-          className="relative flex h-44 w-44 items-center justify-center rounded-full border border-cyan-200/20 bg-[radial-gradient(circle_at_30%_30%,_rgba(103,232,249,0.85),_rgba(14,165,233,0.35)_35%,_rgba(15,23,42,0.92)_72%)] shadow-[0_0_55px_rgba(34,211,238,0.22)]"
+          className="relative flex h-44 w-44 items-center justify-center rounded-full border border-cyan-200/25 bg-[radial-gradient(circle_at_30%_30%,_rgba(103,232,249,0.88),_rgba(14,165,233,0.4)_35%,_rgba(30,41,59,0.9)_72%)] shadow-[0_0_55px_rgba(34,211,238,0.26)]"
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 18, ease: "linear" }}
         >
@@ -73,3 +73,5 @@ function Loader() {
 }
 
 export default Loader;
+
+
