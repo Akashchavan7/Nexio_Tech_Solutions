@@ -107,7 +107,7 @@ export const teamMembers = [
   },
   {
     name: "Sakshi Pawar",
-    role: "Co-Founder & Creative Direction",
+    role: "Creative Direction",
     description:
       "Shapes creative direction, brand communication, and client collaboration to keep every delivery aligned and memorable.",
   },
